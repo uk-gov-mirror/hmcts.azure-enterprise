@@ -9,7 +9,3 @@ resource "azuredevops_serviceendpoint_azurerm" "endpoint" {
   azurerm_subscription_id   = azurerm_subscription.this.subscription_id
   azurerm_subscription_name = azurerm_subscription.this.subscription_name
 }
-
-removed {
-  from = module.subscription["DTS-RBAC-NONPRODUCTION"].azuredevops_serviceendpoint_azurerm.endpoint
-}

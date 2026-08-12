@@ -1,3 +1,8 @@
+
+removed {
+  from = module.subscription["DTS-RBAC-NONPRODUCTION"].azuredevops_serviceendpoint_azurerm.endpoint
+}
+
 module "subscription" {
   for_each = local.subscriptions
 
